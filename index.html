@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>#Cifra de Cesar e Base64#</h1>
+    </header>
+
+    <section>   
+         <div>
+            <label for="">Selecione o tipo de codificação:</label>
+            <select id="select">
+                 <option value="cesar">Cifra de Cesar</option>
+                <option value="base64">Base64</option>
+            </select>
+            <br><br>
+
+            <label for="">Digite sua mensagem:</label><br>
+            <textarea id="textarea" cols="30" rows="10"></textarea><br><br>
+
+            <label for="">Valor do deslocamento:</label><br>
+            <input type="number" name="" id="deslocation"><br><br>
+            <label for="">Codificar</label>
+            <input type="radio" name="cod" id="codificador">
+            <label for="">Descodificar</label>
+            <input type="radio" name="cod" id="decodificador"><br><br> 
+            
+            <button onclick="confirma()">Confirmar</button><br>
+
+            <label for="">Resultado:</label><br>
+             <textarea nome = "" disabled id="result" cols="30" rows="10"></textarea>
+         </div>
+
+    </section>
+    <footer>Developer by: Guilherme Carvalho</footer>
+    <script src="./index.js"></script>
+</body>
+</html>
